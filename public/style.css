@@ -1,0 +1,79 @@
+* {
+  font-family: "Helvetica", sans-serif;
+  padding: 0%;
+  margin: 0%;
+  background-origin: padding-box;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("Fonts/Helvetica\ LT\ 53\ Extended.ttf");
+}
+
+body {
+  background-color: white;
+}
+nav {
+  position: sticky;
+  background-color: white;
+  height: 8vh;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 30px;
+  margin-top: 4.5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo:hover {
+  opacity: 50%;
+  transition: 0.3s ease-out;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.char {
+  width: 60px;
+  height: 60px;
+  border: 4px black solid;
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  top: 100px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
