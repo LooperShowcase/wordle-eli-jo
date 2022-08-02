@@ -1,7 +1,7 @@
 const express = require("express");
 
 const app = express();
-
+const port = process.env.PORT || 3000
 const ourWord = "lucky";
 
 app.get("/word/:guess", function (req, res) {
@@ -39,4 +39,4 @@ app.get("/word/:guess", function (req, res) {
 });
 app.use(express.static("public"));
 
-app.listen(3000);
+app.listen(port);
